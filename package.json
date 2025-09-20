@@ -1,0 +1,23 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "Learning React from Akshay Saini - Namaste React",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tanima-Ghosh/namaste-react.git"
+  },
+  "keywords": [],
+  "author": "Akshay Saini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tanima-Ghosh/namaste-react/issues"
+  },
+  "homepage": "https://github.com/Tanima-Ghosh/namaste-react#readme",
+  "devDependencies": {
+    "parcel": "^2.16.0"
+  }
+}

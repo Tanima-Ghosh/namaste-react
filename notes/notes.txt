@@ -1,0 +1,19 @@
+
+👉🏻 what is package.json 
+package.json is basically a configuration of our npm.
+
+As we are not using vite right now, we are starting from npm init. when we do npm init a package-lock.json file is created and it ask some ques, after completing it it will make anothe file which is pacakge.json. 
+
+👉🏻 there is two types of dependencies we can install. one is dev dependencies and normal dependencies
+
+when we develop any app we use dev dependencies.
+
+👉🏻 differnce betwwen ^ and ~ 
+~ indicates a major change in version => 12.2.3 => 12.2.4
+^ indicates small changes in version => 12.2.4 => 13.1.1
+
+👉🏻 pacakge-lock.json => keeps the track of excat version of all the dependencies.
+
+👉🏻 transitive dependencies => like to make our app we need parcel/ vite/ webpack bundler as a depencencies, that parcel etc as a a project needs other dependencies, that other depencencies need some other. this is called transitive depencencies. this all files comes with node module. and one more thing every dependency has it own package.json file where that particular dependency's has own configuration file.
+
+👉🏻 if i have package.json and package-lock.json files we can re create node module as thoes two files keeps all the depencencies record which are needed to create the app, like a database. 
