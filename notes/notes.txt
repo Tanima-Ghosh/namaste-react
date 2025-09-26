@@ -16,4 +16,26 @@ when we develop any app we use dev dependencies.
 
 👉🏻 transitive dependencies => like to make our app we need parcel/ vite/ webpack bundler as a depencencies, that parcel etc as a a project needs other dependencies, that other depencencies need some other. this is called transitive depencencies. this all files comes with node module. and one more thing every dependency has it own package.json file where that particular dependency's has own configuration file.
 
-👉🏻 if i have package.json and package-lock.json files we can re create node module as thoes two files keeps all the depencencies record which are needed to create the app, like a database. 
+👉🏻 if i have package.json and package-lock.json files we can re create node module as thoes two files keeps all the depencencies record which are needed to create the app, like a database.
+
+👉🏻 npm -> calling or installing a package
+👉🏻 nxp -> executing that package
+
+------------- about parcel ----------------
+
+🚀 dev build
+🚀 local server
+🚀 HMR - hot module replacement
+🚀 file watching algorithim
+🚀 caching - faster build
+🚀 image optimization
+🚀 minified at the time of product build
+🚀 bundle at the time of production
+🚀 consistent hashing
+🚀 code splitting
+🚀 differential bundling - to support the browsers even the older one
+🚀 error digonastic
+🚀 error handiling
+🚀 https
+🚀 tree shaking - remove unused code
+🚀 creates different build for dev and production
