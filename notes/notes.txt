@@ -39,3 +39,34 @@ when we develop any app we use dev dependencies.
 🚀 https
 🚀 tree shaking - remove unused code
 🚀 creates different build for dev and production
+
+
+
+-------------- episode 3 (laying the foundation) --------------
+
+👉🏻 we can create our own script to start a dev project or product build.
+👉🏻 for buid dev we can use "start" script and in terminal we can use the command - npm run start or npm start, both are same. (start is a keyword reserved by npm)
+👉🏻 for production build we can make a script named "build" and in terminal we can use the command like npm run build
+
+
+👉🏻 react element is basically an object and when we render this on to the dom it becomes a html document.
+
+👉🏻 core react -> create elemenr
+👉🏻 to display that in to the browsers we need reactdom
+
+🚀 what is jsx? -> jsx is actually a systax by which we can easily make a react element.
+
+🚫 jsx is not html inside javascript.. nooo..
+
+🚀 jsx is html like syntax. jsx creates a react element.
+
+🚀 is jsx a pure javascript? - no it is not, js engine only understand js code. this jsx before going to js engine it is transpiled to js code. this work is done or taken care by parcel, vite or other bundler, it parcel no do by itself, it has another dependency/ package called Bable. Bable is a transpiler.
+
+-------------components-------------
+
+👉🏻 there is two way to make component, 1. class based components 2. functional component
+👉🏻 what is functional component? - functional component is a normal js function which return some jsx
+
+🚀 (<HeadingComponent />) -> this is the way to to reader a component in root, through this babel understand that this is a component.
+
+🚀 component inside another component -> this process is component composition
