@@ -70,3 +70,20 @@ when we develop any app we use dev dependencies.
 🚀 (<HeadingComponent />) -> this is the way to to reader a component in root, through this babel understand that this is a component.
 
 🚀 component inside another component -> this process is component composition
+
+🚀 apart from arrow function component if we want to make a normal function component using function keyword we have to use return key word alawys.
+
+🚀 jsx takes care with preventing the malecious data. we can put and js/ api in our jsx using {} but js takes care of it.
+
+🚀 there is one more cool stuff as js functional component is a function end of the day we can put that in side any other component like {ComponentName () }. this is same as <ComponentName />
+
+
+---------- Episode 4 (talk is cheap, show me the code) ----------
+
+👉🏻 if i want to put inline css in jsx we have to put it as a javascript objectß
+
+🚀 functional component is just a normal js function and props are the normal argument, by which we can pass data to our component. this is called passing a props, and this props wrap into an object and pass in the function components parenthesis.
+
+🚀 so, when we dynamically passing some data into a component we pass it as a props.
+
+🚀 config driven ui -> Config Driven UI is a design pattern where the structure and content of the UI is controlled by configuration (usually JSON or objects) instead of hardcoding the UI in the component code. (get this definiation from chat gpt)
