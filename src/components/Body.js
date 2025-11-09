@@ -8,6 +8,7 @@ const Body = () => {
   // Local state variable - super powerful variable
 
   const [listOfRestaurant, setListOfRestaurant] = useState([]);
+  const [filteredRestaurant, setFilteredRestaurant] = useState([])
 
   const [searchText, setSearchText] = useState("");
 
@@ -27,6 +28,7 @@ const Body = () => {
     console.log(json?.data?.cards.slice(-12));
 
     setListOfRestaurant(json?.data?.cards.slice(-13));
+    setFilteredRestaurant(json?.data?.cards.slice(-13));
   };
 
   // conditional rendering
@@ -48,6 +50,8 @@ const Body = () => {
               setSearchText(e.target.value)
             }}
           />
+
+          {/* search restaurant */}
           <button
             className="search-btn"
             onClick={() => {
@@ -57,12 +61,14 @@ const Body = () => {
               const filteredRestaurant = listOfRestaurant.filter((res)=>{
                 return res.card.card.info.name.toLowerCase().includes(searchText.toLocaleLowerCase())
               })
-              setListOfRestaurant(filteredRestaurant)
+              setFilteredRestaurant(filteredRestaurant)
             }}
           >
             Search
           </button>
         </div>
+
+        {/* top rated rastaurant */}
         <button
           className="filter-btn"
           onClick={() => {
@@ -79,7 +85,7 @@ const Body = () => {
       </div>
       <div className="res-container">
         {/* restaurant card */}
-        {listOfRestaurant.map((restaurent) => (
+        {filteredRestaurant.map((restaurent) => (
           <RestaurantCard
             key={restaurent.card.card.info.id}
             resData={restaurent}
